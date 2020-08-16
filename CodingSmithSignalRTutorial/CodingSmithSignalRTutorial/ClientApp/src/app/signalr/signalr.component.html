@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let message of messages">
+        {{ message }}
+    </li>
+</ul>
+
+<br>
+<input type="checkbox" [(ngModel)]="useHttp"> Use http to send message
+<input type="text" [(ngModel)]="inputedMessage">
+<button (click)="sendMessage()">Send message</button>
